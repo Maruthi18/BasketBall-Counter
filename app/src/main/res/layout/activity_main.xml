@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:alpha="0.5"
+    android:src="@drawable/basketball"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="4dp"
+                android:textSize="14sp"
                 android:text="Team A" />
 
             <TextView
@@ -30,31 +36,43 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="4dp"
+                android:textSize="56sp"
                 android:text="0" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+
                 android:onClick="addThreeForTeamA"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:text="+3 Points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+               android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addTwoForTeamA"
                 android:text="+2 Points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:onClick="addOneForTeamA"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:text="Free throw" />
 
         </LinearLayout>
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="330dp"
+            android:background="#0B0000"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -76,26 +94,34 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="4dp"
+                android:textSize="56sp"
                 android:text="0" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addThreeForTeamB"
-                android:text="+3 Points" />
+                android:text="+3 Points"
+                />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addTwoForTeamB"
                 android:text="+2 Points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addOneForTeamB"
                 android:text="Free throw" />
 
@@ -109,6 +135,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Reset"
-        android:onClick="reset"/>
+        android:layout_marginBottom="32dp"
+        android:onClick="reset" />
 
 </RelativeLayout>
